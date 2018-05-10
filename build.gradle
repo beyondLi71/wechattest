@@ -23,10 +23,15 @@ repositories {
 	mavenCentral()
 }
 
+ext {
+	fastJsonVersion = '1.2.35'
+}
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	//compile group: 'me.chanjar', name: 'weixin-java-mp', version: '1.0.6'
 	compile group: 'com.github.binarywang', name: 'weixin-java-mp', version: '3.0.0'
+	//FastJson
+	compile("com.alibaba:fastjson:$fastJsonVersion")
 }
