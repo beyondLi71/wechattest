@@ -44,6 +44,7 @@ public class UserOAuthController {
      */
     @RequestMapping(value = "/get/user/info")
     public String getUserInfoByCode(@RequestParam(value = "code")String code, @RequestParam(value = "state")String state) throws WxErrorException {
+        System.out.println("切换新依赖");
         System.out.println(code);
         System.out.println(state);
         //通过code获取access_token
